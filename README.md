@@ -52,7 +52,7 @@ npm run test
 Launches the test runner in the interactive watch mode.
 
 ```
-npm run start
+npm run dev
 ```
 
 Runs the app in the development mode.\
