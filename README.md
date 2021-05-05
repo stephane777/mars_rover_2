@@ -12,7 +12,11 @@ The goal for this project was to
 
 ## Overview
 
-![mars rover](./public/images/overview.jpg)
+### Home page
+![home](./public/images/welcome.jpg)
+
+### Rover on move
+![mars rover](./public/images/Rover_on_move.jpg)
 
 ## Demo
 
