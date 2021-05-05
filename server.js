@@ -23,35 +23,26 @@ app.prepare().then(() => {
 });
 
 const processFile = (req, res) => {
-	try {
-		let writeStream = fs.createWriteStream(
-			"./public/assets/file/orders_to_rovers.csv"
-		);
-		req.pipe(writeStream);
-		req.on("end", () => readFile(res));
-	} catch (e) {
-		console.log(`processFile`);
-		console.log(e);
-	}
+	let writeStream = fs.createWriteStream(
+		"./public/assets/file/orders_to_rovers.csv"
+	);
+
+	req.pipe(writeStream);
+	req.on("end", () => readFile(res));
 };
 
 const readFile = (res) => {
-	try {
-		fs.readFile(
-			"./public/assets/file/orders_to_rovers.csv",
-			"utf8",
-			(err, data) => {
-				if (data) {
-					res.send(formatMovement(data));
-				} else {
-					console.log(err);
-				}
+	fs.readFile(
+		"./public/assets/file/orders_to_rovers.csv",
+		"utf8",
+		(err, data) => {
+			if (data) {
+				res.send(formatMovement(data));
+			} else {
+				res.send("Error while accessing the file");
 			}
-		);
-	} catch (e) {
-		console.log(`readFile`);
-		console.log(e);
-	}
+		}
+	);
 };
 
 const formatMovement = (data) => {

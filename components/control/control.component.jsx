@@ -5,9 +5,6 @@ import { upload_csv, last_mission } from "../../constants/url";
 
 import { runRover, reset, setMessage, loadMovements } from "../../actions";
 
-console.log(`last_mission: ${last_mission}`);
-console.log(`upload_url: ${upload_csv}`);
-
 const Control = () => {
 	const [csvFile, setCsvFile] = React.useState(null);
 	const {
