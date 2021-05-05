@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rover to mars
 
-## Getting Started
+### Description
 
-First, run the development server:
+The goal for this project was to
 
-```bash
-npm run dev
-# or
-yarn dev
+1. Move a list of rovers inside a grid 10*10 or 50*50 cells with the move forward (F) left (L) and right (R) command.
+2. Each rover move one after another.
+3. Accept a csv file with each row is the details needed for one Rover.
+4. Left side of the pipe is the position as X axis, Y axis and the direction in degree.
+5. Right side of the pipe is the orders for the movements.
+
+### Overview
+
+![mars rover](./public/images/overview.jpg)
+
+### Demo
+
+[mars rover demo](https://share.getcloudapp.com/xQuboXq2)
+
+### Tools
+
+For this project I used create-next-app to speed up the development, React, and jsx style.
+Jest and React-testing-library for the testing part.
+My node version : v12.16.1
+My npm version : 7.7.0
+
+### Available Scripts
+
+Before you can run any scripts below install the project with the command below :
+
+```
+git clone https://github.com/stephane777/mars_rover_2.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once you have cloned the repo you must run the command below to install all the dependencies.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+In the project directory, you can run:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run test
+```
 
-## Learn More
+Launches the test runner in the interactive watch mode.
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Deploy on Vercel
+```
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This will build the application for production into the dist folder.
