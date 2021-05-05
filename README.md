@@ -1,31 +1,31 @@
 # Rover to mars
 
-### Description
+## Description
 
 The goal for this project was to
 
-1. Move a list of rovers inside a grid 10*10 or 50*50 cells with the move forward (F) left (L) and right (R) command.
+1. Move a list of rovers inside a grid 10/10 or max 50/50 cells with the move forward (F) left (L) and right (R) command.
 2. Each rover move one after another.
 3. Accept a csv file with each row is the details needed for one Rover.
 4. Left side of the pipe is the position as X axis, Y axis and the direction in degree.
 5. Right side of the pipe is the orders for the movements.
 
-### Overview
+## Overview
 
 ![mars rover](./public/images/overview.jpg)
 
-### Demo
+## Demo
 
 [mars rover demo](https://share.getcloudapp.com/xQuboXq2)
 
-### Tools
+## Tools
 
 For this project I used create-next-app to speed up the development, React, and jsx style.
 Jest and React-testing-library for the testing part.
 My node version : v12.16.1
 My npm version : 7.7.0
 
-### Available Scripts
+## Available Scripts
 
 Before you can run any scripts below install the project with the command below :
 
