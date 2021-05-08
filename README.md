@@ -4,7 +4,7 @@
 
 The goal for this project was to
 
-1. Move a list of rovers inside a grid 10/10 or max 50/50 cells with the move forward (F) left (L) and right (R) command.
+1. Move a list of rovers inside a grid 10/10 or max 50/50 cells with (M)ove forward (L)eft and (R)ight command.
 2. Each rover move one after another.
 3. Accept a csv file with each row is the details needed for one Rover.
 4. Left side of the pipe is the position as X axis, Y axis and the direction in degree.
